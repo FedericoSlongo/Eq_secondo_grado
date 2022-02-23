@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -47,12 +47,18 @@ namespace ESERCIZI_FOGLIO_1_2
                 result_x2.ForeColor = Color.DarkRed;
             } else if (delta == 0)
             {
+                Risultato_esito.ForeColor = Color.Black;
+                result_x1.ForeColor = Color.Black;
+                result_x2.ForeColor = Color.Black;
                 Risultato_esito.Text = "Sue soluzioni reali e coincidenti";
                 x1 = ( -b ) / ( 2 * a );
                 result_x1.Text = Convert.ToString(x1);
                 result_x2.Text = Convert.ToString(x1);
             } else
             {
+                Risultato_esito.ForeColor = Color.Black;
+                result_x1.ForeColor = Color.Black;
+                result_x2.ForeColor = Color.Black;
                 Risultato_esito.Text = "Soluzione reali e distinte";
                 x1 = ( ( -b ) + delta )/ ( 2 * a );
                 x2 = ( ( -b ) - delta )/ ( 2 * a );
